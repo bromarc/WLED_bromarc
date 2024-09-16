@@ -11,6 +11,8 @@
  */
 //#include "../usermods/EXAMPLE_v2/usermod_v2_example.h"
 
+#include "../usermods/usermod_dual_encoder/usermod_dual_encoder.h"
+
 #ifdef USERMOD_BATTERY
   #include "../usermods/Battery/usermod_v2_Battery.h"
 #endif
@@ -250,6 +252,8 @@ void registerUsermods()
    * \/ \/ \/
    */
   //usermods.add(new MyExampleUsermod());
+
+  usermods.add(new DualEncoderMod());
 
   #ifdef USERMOD_BATTERY
   usermods.add(new UsermodBattery());
